@@ -1,0 +1,18 @@
+URL Shortener
+
+Design a URL shortener service that:
+1. Accepts a valid URL.
+2. Generates a short URL.
+3. Redirects users to the original URL.
+4. Tracks total visits/clicks.
+
+Routes:
+
+POST /url
+- Create a short URL.
+
+GET /:id
+- Redirect to original URL.
+
+GET /url/analytics/:id
+- Return total clicks/analytics.
