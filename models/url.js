@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const urlSchema = new mongoose.Schema({
 
-        shortId: {
+        shortId: {            //Store generated short URL id.
             type: String,
             required: true,
             unique: true,
@@ -11,7 +11,7 @@ const urlSchema = new mongoose.Schema({
             type: String,
             required: true,
         },
-        visitHistory: [{timeStamp:{type: Number}}],
+        visitHistory: [{timeStamp:{type: Number}}], //Store every visit/click.
       
     },
 

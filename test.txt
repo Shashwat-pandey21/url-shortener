@@ -16,3 +16,28 @@ GET /:id
 
 GET /url/analytics/:id
 - Return total clicks/analytics.
+
+
+
+
+
+
+//___________________Core Project Flow___________
+
+                  User sends URL
+                      ↓
+                  POST /url
+                      ↓
+                  Generate ShortID
+                      ↓
+                  Store in MongoDB
+                      ↓
+                  Return ShortID
+                      ↓
+                  User opens Short URL
+                      ↓
+                  GET /:shortId
+                      ↓
+                  Find Original URL
+                      ↓
+                  Redirect User
